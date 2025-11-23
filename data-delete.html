@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flowline App – Data Deletion Instructions</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            color: #222;
+            background-color: #fafafa;
+        }
+        h1, h2, h3 {
+            color: #111;
+        }
+        h1 {
+            margin-bottom: 0.25rem;
+        }
+        .meta {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 2rem;
+        }
+        a {
+            color: #0a66c2;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            padding-left: 1.25rem;
+        }
+        section {
+            margin-bottom: 1.75rem;
+        }
+        footer {
+            margin-top: 3rem;
+            font-size: 0.85rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Flowline App &ndash; Data Deletion Instructions</h1>
+        <p class="meta">Last updated: February 22, 2025</p>
+    </header>
+
+    <section>
+        <p>
+            Flowline stores certain user data to provide ride tracking, authentication, and performance
+            features. You have the right to request the deletion of your personal data at any time.
+            This page explains how to remove your Flowline data from our systems.
+        </p>
+    </section>
+
+    <section>
+        <h2>What Data Can Be Deleted</h2>
+        <p>You may request deletion of any or all of the following data types:</p>
+        <ul>
+            <li>Your user account (Google, Facebook, or email-linked)</li>
+            <li>Recorded rides, GPS tracks, speed/elevation information</li>
+            <li>Profile information (name, email, profile photo)</li>
+            <li>Device information and diagnostics stored in Firebase</li>
+            <li>Cloud-stored ride files, images, or exported files</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>How to Delete Your Data</h2>
+
+        <h3>Option 1: Delete Account &amp; Data from Within the App (If available)</h3>
+        <p>
+            If the Flowline app currently provides an in-app “Delete Account” option, you can follow these steps:
+        </p>
+        <ul>
+            <li>Open the Flowline app</li>
+            <li>Go to <strong>Settings</strong> or <strong>Profile</strong></li>
+            <li>Select <strong>Delete Account</strong> or <strong>Delete My Data</strong></li>
+            <li>Confirm the deletion</li>
+        </ul>
+        <p>
+            This will permanently remove your user account and all associated data from our servers.
+        </p>
+
+        <h3>Option 2: Request Manual Deletion via Email</h3>
+        <p>
+            If in-app deletion is not available or you prefer manual assistance, you may request deletion by email:
+        </p>
+        <p>
+            Email: <a href="mailto:your-email@example.com">your-email@example.com</a>
+        </p>
+        <p>Please include the following in your email:</p>
+        <ul>
+            <li>Your name (optional)</li>
+            <li>The email address associated with your Flowline account</li>
+            <li>Whether you want:</li>
+            <ul>
+                <li>Your entire account deleted</li>
+                <li>Specific ride data deleted</li>
+                <li>All cloud-stored data removed</li>
+            </ul>
+        </ul>
+        <p>
+            We will process your deletion request within **30 days** (usually much sooner).
+        </p>
+
+        <h3>Option 3: Disconnect Flowline from Login Provider</h3>
+        <p>You may also revoke Flowline’s access through your login provider:</p>
+        <ul>
+            <li><strong>Google:</strong> https://myaccount.google.com/permissions</li>
+            <li><strong>Facebook:</strong> https://facebook.com/settings?tab=applications</li>
+        </ul>
+        <p>
+            Revoking access prevents future login but does <strong>not</strong> automatically delete app data.
+            You must still request account deletion via the methods above.
+        </p>
+    </section>
+
+    <section>
+        <h2>What Happens After Deletion</h2>
+        <ul>
+            <li>Your account will be permanently removed from our authentication system.</li>
+            <li>Your ride history, GPS routes, stats, and cloud-stored data will be deleted.</li>
+            <li>Your data cannot be recovered once deletion is completed.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>
+            If you need assistance or have any questions regarding data deletion, you can contact us at:
+        </p>
+        <p>
+            Email:
+            <a href="mailto:mtb.flowline@gmail.com">mtb.flowline@gmail.com</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Flowline. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // auto-fill current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
